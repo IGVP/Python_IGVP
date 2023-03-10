@@ -20,11 +20,13 @@ from typing import List
 my_list = [7, 5, 3, 3, 2]
 print(f'Текущий рейтинг: {my_list}')
 while True:
-    i = input('Введите цифру от 1 до 10, либо "e" для завершения: ')
-    if i != 'e':
+    i = input('Введите натуральное число (положительное целое) либо "e" для завершения: ')
+    if i == 'e':
+        print('Выход из программы по требованию пользователя')
+        quit()
+    elif not i.isnumeric():
+        continue
+    else:
         my_list.append(int(i))
         my_list.sort(reverse=True)
         print(my_list)
-    else:
-        print('Выход из программы по требованию пользователя')
-        quit()
