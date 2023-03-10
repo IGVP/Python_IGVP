@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e7ddf7-34db-437c-a254-6cebeac9494b" name="Changes" comment="" />
+    <list default="true" id="76e7ddf7-34db-437c-a254-6cebeac9494b" name="Changes" comment="Начало решения задачи 3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_2_task_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_2_task_3.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,5 +42,9 @@
       <updated>1678336169134</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Начало решения задачи 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Начало решения задачи 3" />
   </component>
 </project>
