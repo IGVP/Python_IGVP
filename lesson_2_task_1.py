@@ -15,3 +15,8 @@
 <class 'bool'>
 <class 'NoneType'>
 """
+my_list = [5, "string", 0.15, True, None]
+print(f'Тип: {type(my_list)}')
+print(f'Количество элементов: {len(my_list)}')
+for el in my_list:
+    print(f'Элемент: {my_list.index(el)} тип/класс {type(el)}')
