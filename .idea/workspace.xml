@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e7ddf7-34db-437c-a254-6cebeac9494b" name="Changes" comment="Решил задачу 6, внес корректировки по ряду файлов" />
+    <list default="true" id="76e7ddf7-34db-437c-a254-6cebeac9494b" name="Changes" comment="Звершил выполнение и нумерацию." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678449642661</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Звершил выполнение и нумерацию.">
+      <created>1678450295405</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678450295405</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -89,6 +96,7 @@
     <MESSAGE value="Решил задачу 5" />
     <MESSAGE value="Решил задачу 6" />
     <MESSAGE value="Решил задачу 6, внес корректировки по ряду файлов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Решил задачу 6, внес корректировки по ряду файлов" />
+    <MESSAGE value="Звершил выполнение и нумерацию." />
+    <option name="LAST_COMMIT_MESSAGE" value="Звершил выполнение и нумерацию." />
   </component>
 </project>
