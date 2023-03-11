@@ -1,0 +1,90 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"101aca95-51db-4be3-a3cc-39b2c216cea6\" name=\"Changes\" comment=\"Внес корректировки в файл README.md\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"lesson-1\" />\n      </map>\n    </option>\n  </component>\n  <component name=\"TaskManager\">\n    <task id=\"LOCAL-00001\" summary=\"Внес корректировки в файл README.md\">\n      <created>1678346446446</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1678346446446</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Внес корректировки в файл README.md\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Внес корректировки в файл README.md\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 3f055729fa1db2b511aba41586cc7a811fda1c34)
++++ b/.idea/workspace.xml	(date 1678515123319)
+@@ -1,7 +1,13 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="101aca95-51db-4be3-a3cc-39b2c216cea6" name="Changes" comment="Внес корректировки в файл README.md" />
++    <list default="true" id="101aca95-51db-4be3-a3cc-39b2c216cea6" name="Changes" comment="Внес корректировки в файл README.md">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/lesson_3_task_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3_task_1.py" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -14,6 +20,21 @@
+       </map>
+     </option>
+   </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProjectId" id="2Mr3F8VSoT1SqhhOlF55CQBGXQF" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true"
++  }
++}]]></component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task id="LOCAL-00001" summary="Внес корректировки в файл README.md">
+       <created>1678346446446</created>
+@@ -21,6 +42,13 @@
+       <option name="presentableId" value="LOCAL-00001" />
+       <option name="project" value="LOCAL" />
+       <updated>1678346446446</updated>
++    </task>
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="101aca95-51db-4be3-a3cc-39b2c216cea6" name="Changes" comment="Внес корректировки в файл README.md" />
++      <created>1678511769116</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1678511769116</updated>
+     </task>
+     <option name="localTasksCounter" value="2" />
+     <servers />
+Index: lesson_3_task_1.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"\"\"\n1. Реализовать функцию, принимающую два числа (позиционные аргументы)\nи выполняющую их деление. Числа запрашивать у пользователя,\nпредусмотреть обработку ситуации деления на ноль (try except).\n\nПример:\nВведите первое число: 10\nВведите второе число: 0\nВы что? Пытаетесь делить на 0!\n\nProcess finished with exit code 0\n\nПример:\nВведите первое число: 10\nВведите второе число: 10\n1.0\n\nProcess finished with exit code 0\n\"\"\"\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lesson_3_task_1.py b/lesson_3_task_1.py
+--- a/lesson_3_task_1.py	(revision 3f055729fa1db2b511aba41586cc7a811fda1c34)
++++ b/lesson_3_task_1.py	(date 1678515123325)
+@@ -17,3 +17,18 @@
+ 
+ Process finished with exit code 0
+ """
++
++
++def my_div():
++    try:
++        arg_1 = int(input('Ведите делимое: '))
++        arg_2 = int(input('Dведите делитель: '))
++        return arg_1 / arg_2
++    except ZeroDivisionError:
++        return 'Дление на 0 недопустимо'
++    except ValueError:
++        return 'Необходимо ввести число'
++
++
++res = my_div()
++print(res)
