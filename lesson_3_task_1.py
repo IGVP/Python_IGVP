@@ -21,8 +21,8 @@ Process finished with exit code 0
 
 def my_div():
     try:
-        arg_1 = int(input('Ведите делимое: '))
-        arg_2 = int(input('Dведите делитель: '))
+        arg_1 = float(input('Ведите делимое: '))
+        arg_2 = float(input('Dведите делитель: '))
         return arg_1 / arg_2
     except ZeroDivisionError:
         return 'Деление на 0 недопустимо, запустите программу ещё раз.'
