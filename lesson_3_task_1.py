@@ -31,4 +31,4 @@ def my_div():
 
 
 res = my_div()
-print(res)
+print(f'Результат деления: {res:0.03}')
