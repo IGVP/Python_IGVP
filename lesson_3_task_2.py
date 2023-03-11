@@ -11,13 +11,18 @@ email: jackie@gmail.com, телефон: 01005321456
 
 
 def my_list(**kwargs):
-    return list(kwargs.values())
+    # функиция вывода неопредленного числа именованных парметров
+    res = list(kwargs.values())
+    # преобразование в список
+    return res
+    # Вызываем функцию
 
 
-print(my_list(name=input('Enter name: '),
-              s_name=input('Enter second name: '),
-              b_date=input('Enter birth day: '),
-              l_town=input('Enter live town: '),
-              email=input('Enter email: '),
-              tel=input('Enter tel number: ')))
-
+# Задаем параметры вывода
+# * убирает скобки и выводит список чиcтым
+print(*my_list(name=input('Введите имя: '),
+               s_name=input('Введите фамилию: '),
+               b_date=input('Введите год рождения: '),
+               l_town=input('Введите город проживания: '),
+               email=input('Введите e-mail: '),
+               tel=input('Веведите номер телефона: ')))
