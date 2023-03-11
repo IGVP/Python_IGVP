@@ -25,10 +25,9 @@ def my_div():
         arg_2 = int(input('Dведите делитель: '))
         return arg_1 / arg_2
     except ZeroDivisionError:
-        return 'Дление на 0 недопустимо'
+        return 'Деление на 0 недопустимо, запустите программу ещё раз.'
     except ValueError:
-        return 'Необходимо ввести число'
+        return 'Необходимо ввести число, запустите программу ещё раз.'
 
 
-res = my_div()
-print(f'Результат деления: {res:0.03}')
+print(my_div())
