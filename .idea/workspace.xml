@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="101aca95-51db-4be3-a3cc-39b2c216cea6" name="Changes" comment="Выполнил задачу 4">
+    <list default="true" id="101aca95-51db-4be3-a3cc-39b2c216cea6" name="Changes" comment="Выполнил задачу 5">
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tlesson_3_ask_6_2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_3_task_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3_task_5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlesson_3_ask_6.py" beforeDir="false" afterPath="$PROJECT_DIR$/tlesson_3_ask_6.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -77,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678533371926</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Выполнил задачу 5">
+      <created>1678535884695</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678535884695</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -85,6 +101,7 @@
     <MESSAGE value="Корректировка в задаче 1" />
     <MESSAGE value="Выполнил задачу 3" />
     <MESSAGE value="Выполнил задачу 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Выполнил задачу 4" />
+    <MESSAGE value="Выполнил задачу 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выполнил задачу 5" />
   </component>
 </project>

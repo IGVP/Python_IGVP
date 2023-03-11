@@ -10,26 +10,21 @@
 """
 
 
-def int_func(text):
+def int_func():
+    text = input('Введитe слово: ')
     print('Перевод к формату: первая заглавная / остальные - строчные буквы:')
     res = text.title()
     return res
 
 
-print(int_func(text=input('Введитe слово: ')))
+print(int_func())
 
-# блок 2
 print('Введите строку слов через пробел строчными буквами')
-
-
 def exe_6(text):
     ls = []
-    while el in ls:
-        print(el)
+    for i in range(len(text)):
+        ls.append(text[i][0:1].title() + text[i][1:])
+    return ' '.join(ls)
 
 
 print(exe_6(input('Input text: ').split()))
-'''
-ls.append(text[i][0:1].title() + text[i][1:])
-    return ' '.join(ls)
-'''
