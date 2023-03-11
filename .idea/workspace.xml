@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="101aca95-51db-4be3-a3cc-39b2c216cea6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlesson_3_ask_6.py" beforeDir="false" afterPath="$PROJECT_DIR$/tlesson_3_ask_6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tlesson_3_ask_6_2.py" beforeDir="false" />
-    </list>
+    <list default="true" id="101aca95-51db-4be3-a3cc-39b2c216cea6" name="Changes" comment="Выполнил задачу 6" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678535884695</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Выполнил задачу 6">
+      <created>1678542190017</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678542190017</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -101,6 +104,7 @@
     <MESSAGE value="Выполнил задачу 3" />
     <MESSAGE value="Выполнил задачу 4" />
     <MESSAGE value="Выполнил задачу 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Выполнил задачу 5" />
+    <MESSAGE value="Выполнил задачу 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выполнил задачу 6" />
   </component>
 </project>
