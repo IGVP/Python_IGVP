@@ -23,12 +23,13 @@ print('Введите строку слов через пробел строчн
 
 
 def exe_6(text):
-    ls = []
-    while el in ls:
-        print(el)
+    my_list = []
+    for el in my_list:
+        return print(el)
 
 
 print(exe_6(input('Input text: ').split()))
+
 '''
 ls.append(text[i][0:1].title() + text[i][1:])
     return ' '.join(ls)

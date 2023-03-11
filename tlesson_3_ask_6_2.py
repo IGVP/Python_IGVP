@@ -18,7 +18,7 @@ def int_func():
 
 
 print(int_func())
-
+"""
 print('Введите строку слов через пробел строчными буквами')
 def exe_6(text):
     ls = []
@@ -28,3 +28,4 @@ def exe_6(text):
 
 
 print(exe_6(input('Input text: ').split()))
+"""
