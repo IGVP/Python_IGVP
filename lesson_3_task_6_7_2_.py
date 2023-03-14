@@ -12,8 +12,11 @@
 
 def int_func(text):
     # Задаем функицю получения строки и перевода в верхний регистр
-    res = text.title()
-    if text.is
+    if text.isalpha():
+        res = text.title()
+    else:
+        print('Слово должно содержать только буквы')
+        quit()
     # Возвращаем результат
     return res
 
@@ -36,3 +39,34 @@ for el in my_list:
     i += 1
 # Выводим на печать список (трансформируем для читаемости)
 print(*my_list)
+
+
+'''
+if title is None:
+    tmp = input('Введите название товара: ')
+    if not tmp.isalpha():
+        print('Наименование товара не может быть пустым и не должно быть пустым. Введите корректно.')
+        continue
+    title = tmp
+
+if price is None:
+    tmp = input('Введите стоимость товара: ')
+    if not tmp.isdigit():
+        print('Цена должна быть числом. Введите корректно.')
+        continue
+    price = int(tmp)
+
+if amount is None:
+    tmp = input('Введите количество: ')
+    if not tmp.isdigit():
+        print('Количество должно быть числом. Введите корректно.')
+        continue
+    amount = int(tmp)
+
+tmp = input('Введите единицы измерения без точки: ')
+if not tmp.isalpha():
+    print('Единица изменерения не может быть пустой, не может быть числом. Попробуйте еще раз.')
+    continue
+unit = tmp
+
+'''
