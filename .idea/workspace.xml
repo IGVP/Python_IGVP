@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca988684-44d2-4158-9f7c-f58de54ddbcd" name="Changes" comment="Завершение ДЗ" />
+    <list default="true" id="ca988684-44d2-4158-9f7c-f58de54ddbcd" name="Changes" comment="Завершение ДЗ!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,9 +23,6 @@
         <entry key="$PROJECT_DIR$" value="lesson-1" />
       </map>
     </option>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/lesson_3_task_6_7.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,7 +54,7 @@
       <updated>1678346446446</updated>
     </task>
     <task active="true" id="Default" summary="Default task">
-      <changelist id="101aca95-51db-4be3-a3cc-39b2c216cea6" name="Changes" comment="Внес корректировки в файл README.md" />
+      <changelist id="ca988684-44d2-4158-9f7c-f58de54ddbcd" name="Changes" comment="Завершение ДЗ" />
       <created>1678511769116</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -140,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678810607913</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Завершение ДЗ!">
+      <created>1678811888887</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1678811888887</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,6 +159,7 @@
     <MESSAGE value="Выполнил задачу 4, вариант 2" />
     <MESSAGE value="Чистка задач 4, 6" />
     <MESSAGE value="Завершение ДЗ" />
-    <option name="LAST_COMMIT_MESSAGE" value="Завершение ДЗ" />
+    <MESSAGE value="Завершение ДЗ!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Завершение ДЗ!" />
   </component>
 </project>
