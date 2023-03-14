@@ -12,11 +12,18 @@
 
 def int_func(text):
     # Задаем функицю получения строки и перевода в верхний регистр
-    if text.isalpha():
-        res = text.title()
-    else:
-        print('Слово должно содержать только буквы')
+    if not text.isalpha():
+        print('Слова должны содержать только строчные латинские буквы, запустите программу повторно и корректно  осуществите ввод!')
         quit()
+    elif not text.islower():
+        print('Слова должны содержать только строчные латинские буквы, запустите программу повторно и корректно  осуществите ввод!')
+        quit()
+    elif not text.isascii():
+        print('Слова должны содержать только строчные латинские буквы, запустите программу повторно и корректно  осуществите ввод!')
+        quit()
+    else:
+        res = text.title()
+
     # Возвращаем результат
     return res
 
@@ -40,33 +47,35 @@ for el in my_list:
 # Выводим на печать список (трансформируем для читаемости)
 print(*my_list)
 
-
 '''
-if title is None:
-    tmp = input('Введите название товара: ')
+while True:
+
+    if title is None:
+        tmp = input('Введите название товара: ')
+        if not tmp.isalpha():
+            print('Наименование товара не может быть пустым и не должно быть пустым. Введите корректно.')
+            continue
+        title = tmp
+
+    if price is None:
+        tmp = input('Введите стоимость товара: ')
+        if not tmp.isdigit():
+            print('Цена должна быть числом. Введите корректно.')
+            continue
+        price = int(tmp)
+
+    if amount is None:
+        tmp = input('Введите количество: ')
+        if not tmp.isdigit():
+            print('Количество должно быть числом. Введите корректно.')
+            continue
+        amount = int(tmp)
+
+    tmp = input('Введите единицы измерения без точки: ')
     if not tmp.isalpha():
-        print('Наименование товара не может быть пустым и не должно быть пустым. Введите корректно.')
+        print('Единица изменерения не может быть пустой, не может быть числом. Попробуйте еще раз.')
         continue
-    title = tmp
+    unit = tmp
 
-if price is None:
-    tmp = input('Введите стоимость товара: ')
-    if not tmp.isdigit():
-        print('Цена должна быть числом. Введите корректно.')
-        continue
-    price = int(tmp)
-
-if amount is None:
-    tmp = input('Введите количество: ')
-    if not tmp.isdigit():
-        print('Количество должно быть числом. Введите корректно.')
-        continue
-    amount = int(tmp)
-
-tmp = input('Введите единицы измерения без точки: ')
-if not tmp.isalpha():
-    print('Единица изменерения не может быть пустой, не может быть числом. Попробуйте еще раз.')
-    continue
-unit = tmp
 
 '''

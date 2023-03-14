@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca988684-44d2-4158-9f7c-f58de54ddbcd" name="Changes" comment="Выполнил задачу 6">
+    <list default="true" id="ca988684-44d2-4158-9f7c-f58de54ddbcd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson_3_task_6_7_2_.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3_task_6_7_2_.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +26,9 @@
         <entry key="$PROJECT_DIR$" value="lesson-1" />
       </map>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/lesson_3_task_6_7_2_.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
