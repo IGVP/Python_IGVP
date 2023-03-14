@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca988684-44d2-4158-9f7c-f58de54ddbcd" name="Changes" comment="Чистка задач 4, 6">
-      <change beforePath="$PROJECT_DIR$/lesson_3_task_1_.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3_task_1_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_3_task_2_.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3_task_2_.py" afterDir="false" />
-    </list>
+    <list default="true" id="ca988684-44d2-4158-9f7c-f58de54ddbcd" name="Changes" comment="Завершение ДЗ" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +25,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/lesson_3_task_6_7_2_.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lesson_3_task_6_7.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -129,7 +126,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678809735253</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Чистка задач 4, 6">
+      <created>1678810562402</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678810562402</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Завершение ДЗ">
+      <created>1678810607913</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1678810607913</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -143,6 +154,7 @@
     <MESSAGE value="Выполнил задачу 6, вариант 2 (еще, раз)" />
     <MESSAGE value="Выполнил задачу 4, вариант 2" />
     <MESSAGE value="Чистка задач 4, 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Чистка задач 4, 6" />
+    <MESSAGE value="Завершение ДЗ" />
+    <option name="LAST_COMMIT_MESSAGE" value="Завершение ДЗ" />
   </component>
 </project>
