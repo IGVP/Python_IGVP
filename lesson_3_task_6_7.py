@@ -28,10 +28,7 @@ def int_func(text):
               'запустите программу повторно и корректно  осуществите ввод!')
         quit()
     else:
-        res = text.title()
-
-    # Возвращаем результат
-    return res
+        return text.title()
 
 
 # Обозначаем первый блок
