@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca988684-44d2-4158-9f7c-f58de54ddbcd" name="Changes" comment="Завершение ДЗ!" />
+    <list default="true" id="101aca95-51db-4be3-a3cc-39b2c216cea6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -23,27 +18,22 @@
         <entry key="$PROJECT_DIR$" value="lesson-1" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2Mr3F8VSoT1SqhhOlF55CQBGXQF" />
+  <component name="ProjectId" id="2N34EFKvMSfWrMQX2M21WNi3LZ2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/igor/Desktop/Python_IGVP&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="Внес корректировки в файл README.md">
@@ -54,112 +44,31 @@
       <updated>1678346446446</updated>
     </task>
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ca988684-44d2-4158-9f7c-f58de54ddbcd" name="Changes" comment="Завершение ДЗ" />
-      <created>1678511769116</created>
+      <changelist id="101aca95-51db-4be3-a3cc-39b2c216cea6" name="Changes" comment="Внес корректировки в файл README.md" />
+      <created>1678879318050</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1678511769116</updated>
+      <updated>1678879318050</updated>
     </task>
-    <task id="LOCAL-00002" summary="Корректировка в задаче 1">
-      <created>1678517487068</created>
+    <task id="LOCAL-00002" summary="Внес корректировки в файл README.md">
+      <created>1678879394372</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1678517487068</updated>
+      <updated>1678879394372</updated>
     </task>
-    <task id="LOCAL-00003" summary="Выполнил задачу 3">
-      <created>1678528790940</created>
+    <task id="LOCAL-00003" summary="Внес корректировки в файл README.md">
+      <created>1678879890493</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1678528790940</updated>
+      <updated>1678879890494</updated>
     </task>
-    <task id="LOCAL-00004" summary="Выполнил задачу 4">
-      <created>1678533371926</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1678533371926</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Выполнил задачу 5">
-      <created>1678535884695</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1678535884695</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Выполнил задачу 6">
-      <created>1678542190017</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1678542190017</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Выполнил задачу 6, вариант 2">
-      <created>1678804057553</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1678804057553</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Выполнил задачу 6, вариант 2 (еще, раз)">
-      <created>1678804403257</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1678804403257</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Выполнил задачу 4, вариант 2">
-      <created>1678804969352</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1678804969352</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Чистка задач 4, 6">
-      <created>1678809735253</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1678809735253</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Чистка задач 4, 6">
-      <created>1678810562402</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1678810562402</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Завершение ДЗ">
-      <created>1678810607913</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1678810607913</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Завершение ДЗ!">
-      <created>1678811888887</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1678811888887</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Внес корректировки в файл README.md" />
-    <MESSAGE value="Корректировка в задаче 1" />
-    <MESSAGE value="Выполнил задачу 3" />
-    <MESSAGE value="Выполнил задачу 4" />
-    <MESSAGE value="Выполнил задачу 5" />
-    <MESSAGE value="Выполнил задачу 6" />
-    <MESSAGE value="Выполнил задачу 6, вариант 2" />
-    <MESSAGE value="Выполнил задачу 6, вариант 2 (еще, раз)" />
-    <MESSAGE value="Выполнил задачу 4, вариант 2" />
-    <MESSAGE value="Чистка задач 4, 6" />
-    <MESSAGE value="Завершение ДЗ" />
-    <MESSAGE value="Завершение ДЗ!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Завершение ДЗ!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Внес корректировки в файл README.md" />
   </component>
 </project>
