@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="101aca95-51db-4be3-a3cc-39b2c216cea6" name="Changes" comment="Внес корректировки в файл README.md" />
+    <list default="true" id="101aca95-51db-4be3-a3cc-39b2c216cea6" name="Changes" comment="Внес корректировки в файл README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +19,17 @@
         <entry key="$PROJECT_DIR$" value="lesson-1" />
       </map>
     </option>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "/Users/igor/Desktop/Python_IGVP"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="task_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -58,6 +72,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Внес корректировки в файл README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Внес корректировки в файл README.md" />
+    <MESSAGE value="Внес корректировки в task_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Внес корректировки в task_1" />
   </component>
 </project>

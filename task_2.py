@@ -7,3 +7,7 @@
 
 Реализуйте вариант без и с генераторным выражением
 """
+my_list = [int(el) for el in input('Введите числа через пробел и нажмите Enter: ').split()]
+print(f'Исходный спискок: {my_list}')
+my_list = [my_list[el] for el in range(1, len(my_list)) if my_list[el] > my_list[el - 1]]
+print(my_list)
