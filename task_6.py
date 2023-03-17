@@ -12,3 +12,26 @@
 Во втором также необходимо предусмотреть условие,
 при котором повторение элементов списка будет прекращено.
 """
+from itertools import count, cycle
+
+# первый блок, формаирование списка
+a = int(input('Введите начальное число последовательности: '))
+b = int(input('Введите последенее число последовательности: '))
+my_list = []
+
+for a in count(3):
+    if a > b:
+        break
+    else:
+        print(a)
+        my_list.append(a)
+print(f'Итоговая последовательность: {my_list}')
+print(f'Количество символов: {len(my_list)}')
+# второй блок, функция cycle
+i = 0
+for i in cycle(my_list):
+    if i >= len(my_list):
+        break
+    else:
+        print(i)
+        i += 1
