@@ -12,6 +12,7 @@
 """
 from itertools import count
 
+
 # задаем функицю определения факториала
 def fact(n):
     my_list = []
@@ -19,11 +20,11 @@ def fact(n):
     for x in count(1):
         if x > n:
             break
-
         factor = factor * x
         yield factor
         my_list.append(factor)
     print(f'Последовательность: {my_list}')
+
 
 # ввод параметра
 n = int(input('Введите целое число: '))
@@ -33,4 +34,3 @@ i = 1
 for el in fact(n):
     print(f'Факториал {i} = {el}')
     i += 1
-

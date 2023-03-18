@@ -9,10 +9,20 @@
 """
 # формирование спика принудительно
 my_list = [300, 2, 12, 44, 1, 1, 10, 7, 1, 78, 123, 44]
+
 # ввод списка, при необходимости
-# my_list = [int(el) for el in input('Введите числа через пробел и нажмите Enter: ').split()]
+#my_list = [int(el) for el in input('Введите числа через пробел и нажмите Enter: ').split()]
+
 # печать исходного списка
 print(f'Исходный список: {my_list}')
-# вариант с использованием LC
-my_list_r = [my_list[el] for el in range(1, len(my_list)) if my_list[el] > my_list[el - 1]]
+
+# вариант с циклом
+my_list_r = []
+for el in range(1, len(my_list)):
+    if my_list[el] > my_list[el - 1]:
+        my_list_r.append(my_list[el])
 print(f'Элементы исходного списка,значения которых больше предыдущего: {my_list_r}')
+
+# вариант с использованием LC
+my_list_r2 = [my_list[el] for el in range(1, len(my_list)) if my_list[el] > my_list[el - 1]]
+print(f'Элементы исходного списка,значения которых больше предыдущего: {my_list_r2}')
