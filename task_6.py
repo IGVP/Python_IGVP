@@ -19,7 +19,7 @@ a = int(input('Введите начальное число последоват
 b = int(input('Введите последенее число последовательности: '))
 my_list = []
 
-for a in count(3):
+for a in count(a):
     if a > b:
         break
     else:
@@ -28,9 +28,10 @@ for a in count(3):
 print(f'Итоговая последовательность: {my_list}')
 print(f'Количество символов: {len(my_list)}')
 # второй блок, функция cycle
+
 i = 0
-for i in cycle(my_list):
-    if i >= len(my_list):
+for el in cycle(my_list):
+    if i > len(my_list) * 2:
         break
     else:
         print(i)

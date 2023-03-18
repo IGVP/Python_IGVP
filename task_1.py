@@ -8,11 +8,21 @@
 """
 from sys import argv
 
-script_name, hours_product, rate_ph, bonus = argv
+func_obj, hours_v, rate_v, bonus_v = argv
+print(f'Старт скрипта: {func_obj}')
 
-print('Имя скрипта: ', script_name)
-print('<< Программа рассчета заработной платы сотрудника >>')
-print('Выработка в часах: ', hours_product)
-print('Ставка в час: ', rate_ph)
-print("Премия: ", bonus)
-print("Зарплата c учетом бонуса: ", (float(hours_product) * float(rate_ph)) + float(bonus))
+
+# задаем функицю
+def salary(hours, rate, bonus):
+    try:
+        print('<< Программа рассчета заработной платы сотрудника >>')
+        print('Выработка в часах: ', hours)
+        print('Ставка в час: ', rate)
+        print("Премия: ", bonus)
+        print(f"Зарплата сотрудника c учетом бонуса: ", (float(hours) * float(rate)) + float(bonus))
+    except TypeError:
+        print('Ошибка ввода параметров')
+
+
+# вызываем функицю с заданными параметрами
+salary(hours_v, rate_v, bonus_v)
