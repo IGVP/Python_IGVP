@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="101aca95-51db-4be3-a3cc-39b2c216cea6" name="Changes" comment="task_5_7_finished">
-      <change afterPath="$PROJECT_DIR$/task_1_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_1_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_6.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_7.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_7.py" afterDir="false" />
-    </list>
+    <list default="true" id="101aca95-51db-4be3-a3cc-39b2c216cea6" name="Changes" comment="task_1_7_finished" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +38,28 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.task_1 (2)">
+    <configuration name="task_1 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python_IGVP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/task_1.py" />
+      <option name="PARAMETERS" value="8 2 3" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="task_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_IGVP" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,11 +146,13 @@
     </configuration>
     <list>
       <item itemvalue="Python.task_1" />
+      <item itemvalue="Python.task_1 (2)" />
       <item itemvalue="Python.task_1_1" />
       <item itemvalue="Python.task_1_2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.task_1 (2)" />
         <item itemvalue="Python.task_1" />
         <item itemvalue="Python.task_1_1" />
         <item itemvalue="Python.task_1_2" />
@@ -188,7 +203,21 @@
       <option name="presentableId" value="Default" />
       <updated>1679140982708</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="task_1_7_finished">
+      <created>1679141516530</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679141516530</updated>
+    </task>
+    <task id="LOCAL-00007" summary="task_1_7_finished">
+      <created>1679141543413</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679141543413</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -197,6 +226,7 @@
     <MESSAGE value="task_2" />
     <MESSAGE value="task_1_4_finished" />
     <MESSAGE value="task_5_7_finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="task_5_7_finished" />
+    <MESSAGE value="task_1_7_finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="task_1_7_finished" />
   </component>
 </project>
