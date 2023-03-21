@@ -15,26 +15,32 @@
 """
 import json
 
-report = []
-with open('task_7.txt', 'r', encoding='UTF-8') as file:
-    text = file.read()
-    file.seek(0)
-    profits = {}
-    profit_sum = 0
-    for row in file:
-        items = row.split(' ')
-        profit = int(items[2]) - int(items[3])
-        if profit > 0:
-            profits.update({items[0]: profit})
-            profit_sum += profit
-    report.append(profits)
-    report.append({'average_profit': (profit_sum / len(profits))})
+profit = {}
+pr = {}
+prof = 0
+prof_aver = 0
+i = 0
+with open('task_7.txt', 'r') as file:
+    for line in file:
+        name, firm, earning, damage = line.split()
+        profit[name] = int(earning) - int(damage)
+        if profit.setdefault(name) >= 0:
+            prof = prof + profit.setdefault(name)
+            i += 1
+    if i != 0:
+        prof_aver = prof / i
+        print(f'Прибыль средняя - {prof_aver:.2f}')
+    else:
+        print(f'Прибыль средняя - отсутсвует. Все работают в убыток')
+'''        
+    pr = {'средняя прибыль': round(prof_aver)}
+    profit.update(pr)
+    print(f'Прибыль каждой компании - {profit}')
 
-with open('task07.json.tmp', 'w', encoding='UTF-8') as json_file:
-    json.dump(report, json_file, ensure_ascii=False)
+with open('file_7.json', 'w') as write_js:
+    json.dump(profit, write_js)
 
-json_report = json.dumps(report, ensure_ascii=False)
-
-print(f"Исходный файл:\n{text}\n")
-print(f"Список:\n{report}\n")
-print(f"json-объект:\n{json_report}")
+    js_str = json.dumps(profit)
+    print(f'Создан файл с расширением json со следующим содержимым: \n '
+          f' {js_str}')
+'''

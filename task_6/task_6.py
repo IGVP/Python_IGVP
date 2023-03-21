@@ -9,18 +9,19 @@
                                         Физкультура:   —   30(пр)   —
 Пример словаря: {“Информатика”: 170, “Физика”: 40, “Физкультура”: 30}
 """
-import re
+import re  # подгружаем re
 
-report = {}
-with open('task_6.txt', 'r', encoding='UTF-8') as file:
-    text = file.read()
-    file.seek(0)
-    for row in file:
-        row_items = row.split(': ')
-        # print(row_items)
-        hours = re.findall(r"\d+", row_items[1])
-        # print(hours)
+report = {}  # формируем пустой словарь
+# открывваем и читаем файл, записываем для дальнейшего вывода
+with open('task_6.txt', 'r', encoding='UTF-8') as my_file:
+    text = my_file.read()
+    my_file.seek(0)  # возвращаемся в нулевую позицию по файлу
+    # запускаем цикл
+    for row in my_file:
+        row_items = row.split(': ')  # каждую строку формируем в список
+        hours = re.findall(r"\d+", row_items[1])  # высекаем значения кол-ва занятий, формируем отдельными списками
+        # наполняем словарь ключ - 0-я позиция (предмет): значение - сумма по кол-ву занятий
         report.update({row_items[0]: sum([int(i) for i in hours])})
-
+# печать результата
 print(f"\nФайл для загрузки:\n{text}")
 print(f"\nСловарь:\n{report}")

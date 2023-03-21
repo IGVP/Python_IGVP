@@ -3,11 +3,17 @@
  разделенных пробелами. Программа должна подсчитывать сумму чисел в файле и выводить ее на экран.
 """
 
-with open('task_5.txt', 'w+') as file_obj:
-    num = input('Введите цифры через пробел и нажмите Enter: ')
-    file_obj.write(num)
-    my_numb = num.split()
-res = 0
-for i in my_numb:
-    res += int(i)
-print(f'Сумма = {res}')
+
+# создаем функцию расчёта суммы
+def my_sum(my_str):
+    return sum([int(i) for i in my_str])
+
+
+try:
+    with open('task_5.txt', 'w+') as file_obj:  # создаем файл на запись
+        num = input('Введите цифры через пробел и нажмите Enter: ')  # ввод цифр
+        file_obj.write(num)
+        my_numb = num.split()  # создаем список
+    print(f'Сумма = {my_sum(my_numb)}')  # вызываем функцию расчёта суммы по сфоримрованному списку,выводим на печать
+except ValueError:
+    print('Ошибка ввода, расчёт суммы невозможен, необходимо вводить только числа.')
