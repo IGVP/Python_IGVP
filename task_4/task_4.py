@@ -7,3 +7,8 @@
 Иванов 23543.12
 Петров 13749.32
 """
+import json
+
+with open('my_test_4.json') as f_n:
+    OBJ = json.load(f_n)
+    print(type(OBJ))
