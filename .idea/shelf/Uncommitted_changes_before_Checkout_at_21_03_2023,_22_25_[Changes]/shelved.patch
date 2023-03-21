@@ -1,0 +1,38 @@
+Index: task_5/task_5.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"\"\"\n5)\tСоздать (программно) текстовый файл, записать в него программно набор чисел,\n разделенных пробелами. Программа должна подсчитывать сумму чисел в файле и выводить ее на экран.\n\"\"\"\n\nwith open('task_5.txt', 'w+') as file_obj:\n    num = input('Введите цифры через пробел и нажмите Enter: ')\n    file_obj.write(num)\n    my_numb = num.split()\n\nprint(my_numb)\nprint(f'Сумма = {sum(map(int, my_numb))}')\n
+===================================================================
+diff --git a/task_5/task_5.py b/task_5/task_5.py
+--- a/task_5/task_5.py	
++++ b/task_5/task_5.py	
+@@ -2,11 +2,15 @@
+ 5)	Создать (программно) текстовый файл, записать в него программно набор чисел,
+  разделенных пробелами. Программа должна подсчитывать сумму чисел в файле и выводить ее на экран.
+ """
++from functools import reduce
+ 
+-with open('task_5.txt', 'w+') as file_obj:
++with open('task_5.txt', 'w') as file_obj:
+     num = input('Введите цифры через пробел и нажмите Enter: ')
+     file_obj.write(num)
+     my_numb = num.split()
+ 
+ print(my_numb)
+ print(f'Сумма = {sum(map(int, my_numb))}')
++
++my_result = reduce(lambda x, y: el[x] + el[y], my_numb)
++print(my_result)
+Index: task_5/task_5.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2 2 4
+===================================================================
+diff --git a/task_5/task_5.txt b/task_5/task_5.txt
+--- a/task_5/task_5.txt	
++++ b/task_5/task_5.txt	
+@@ -1,1 +1,1 @@
+-2 2 4
+\ No newline at end of file
++2 3 4
+\ No newline at end of file

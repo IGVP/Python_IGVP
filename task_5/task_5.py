@@ -7,6 +7,7 @@ with open('task_5.txt', 'w+') as file_obj:
     num = input('Введите цифры через пробел и нажмите Enter: ')
     file_obj.write(num)
     my_numb = num.split()
-
-print(my_numb)
-print(f'Сумма = {sum(map(int, my_numb))}')
+res = 0
+for i in my_numb:
+    res += int(i)
+print(f'Сумма = {res}')
