@@ -22,5 +22,5 @@ with open('task_6.txt', 'r', encoding='UTF-8') as file:
         # print(hours)
         report.update({row_items[0]: sum([int(i) for i in hours])})
 
-print(f"\nИсходный файл:\n{text}")
+print(f"\nФайл для загрузки:\n{text}")
 print(f"\nСловарь:\n{report}")
