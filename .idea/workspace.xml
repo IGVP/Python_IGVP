@@ -66,7 +66,18 @@
       <option name="project" value="LOCAL" />
       <updated>1679415220340</updated>
     </task>
+<<<<<<< Updated upstream
     <option name="localTasksCounter" value="4" />
+=======
+    <task id="LOCAL-00008" summary="task_1_7_finished">
+      <created>1679141906722</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679141906722</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+>>>>>>> Stashed changes
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
