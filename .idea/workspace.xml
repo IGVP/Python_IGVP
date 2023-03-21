@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="101aca95-51db-4be3-a3cc-39b2c216cea6" name="Changes" comment="task_1_7_finished">
+      <change afterPath="$PROJECT_DIR$/task_4/my_test_4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_1/task_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_1/task_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_4/my_test_4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_4/task_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_4/task_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_5/task_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_5/task_5.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +22,7 @@
         <entry key="$PROJECT_DIR$" value="lesson-1" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -29,12 +33,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/python_igvp&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="Внес корректировки в файл README.md">

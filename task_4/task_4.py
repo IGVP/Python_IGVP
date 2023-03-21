@@ -7,8 +7,18 @@
 Иванов 23543.12
 Петров 13749.32
 """
-import json
 
-with open('my_test_4.json') as f_n:
-    OBJ = json.load(f_n)
-    print(type(OBJ))
+with open('my_test_4.txt', 'r', encoding='UTF-8') as my_f:
+    my_list = my_f.read().split('\n')
+print('Таблица сотрудников с окладами ниже 20.000:')
+i = 0
+poor_list = []
+sum_total = 0
+for el in my_list:
+    el = el.split()
+    if float(el[1]) < 20000:
+        i += 1
+        print(i, ' ', *el)
+        poor_list.append(el[0])
+    sum_total += float(el[1])
+print('Сотрудники с окладом менее 20.000:', *poor_list, '\n' f'Cредний оклад {round(((sum_total) / len(my_list)), 2)}')
