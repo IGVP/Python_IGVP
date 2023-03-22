@@ -8,15 +8,16 @@ Four — 4
 При этом английские числительные должны заменяться на русские.
 Новый блок строк должен записываться в новый текстовый файл.
 """
+# зазаем словарь en, rus
 dictionary = {"One": "Один", "Two": "Два", "Three": "Три", "Four": "Четыре"}
-
+# открываем исходный файо
 with open('my_test_3.txt', 'r', encoding='UTF-8') as file_en:
-    text_en = file_en.read()
+    text_en = file_en.read()  # записываем text_en
 
-text_ru = text_en
+text_ru = text_en  # передаем данные для перезаписи
 
-for x, y in dictionary.items():
-    text_ru = text_ru.replace(x, y)
-
+for x, y in dictionary.items():  # возвращаем список ключ дначение
+    text_ru = text_ru.replace(x, y)  # меняем ключ на значение (из словаря)
+# записываем файл _ru
 with open('my_test_3_ru.txt', 'w', encoding='UTF-8') as file_ru:
     file_ru.write(text_ru)
