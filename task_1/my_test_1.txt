@@ -1,7 +1,6 @@
 Test 
 for 
 my 
-first file 
-in 
-task 1! 
+first 
+file ! 
  

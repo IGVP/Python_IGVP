@@ -13,30 +13,31 @@
 [{"firm_1": 5000, "firm_2": 3000, "firm_3": 1000}, {"average_profit": 2000}]
 Подсказка: использовать менеджер контекста.
 """
-import json
+import json  # импортируем модуль json
 
-n = 0
-report = []
-with open('task_7.txt', 'r', encoding='UTF-8') as file:
-    text = file.read()
-    file.seek(0)
-    pl = {}
-    profit_sum = 0
-    for row in file:
-        items = row.split()
-        profit = int(items[2]) - int(items[3])
-        pl.update({items[0]: profit})
+n = 0  # счет кол-ва фирм с прибылью для расчета средней прибыли
+report = []  # список для вывода
+with open('task_7.txt', 'r', encoding='UTF-8') as file:  # открываем .txt
+    text = file.read()  # читаем исходный файл
+    file.seek(0)  # возврат к 0 в исходном файле
+    pl = {}  # фирмы с прибылью / убытками (словарь)
+    profit_sum = 0  # счёт прибыли по фирмам с прибылью
+    for row in file:  # цикл по строкам
+        items = row.split()  # формируем списки фирм с метриками
+        profit = int(items[2]) - int(items[3])  # вычисление прибыли (по спискам фирм)
+        pl.update({items[0]: profit})  # формируем словарь фирм с фин результатом
+        # суммируем прибыль по фирмам с прибылью
         if profit > 0:
             n += 1
             profit_sum += profit
-    report.append(pl)
-    report.append({'average_profit': (profit_sum / n)})
-
+    report.append(pl)  # добавляем в список массив {фирма : фин результат}
+    report.append({'average_profit': (profit_sum / n)})  # добавляем в список массив {средняя прибыль : значение}
+# запись в json file
 with open('task_7.json', 'w', encoding='UTF-8') as json_file:
-    json.dump(report, json_file, ensure_ascii=False)
-
-json_report = json.dumps(report, ensure_ascii=False)
-
+    json.dump(report, json_file)
+# формируем json объект для вывода
+json_report = json.dumps(report)
+# вывод результата
 print(f"\nИсходный файл: \n{text}")
 print(f"Список:\n{report}\n")
 print(f"json-объект:\n{json_report}")
