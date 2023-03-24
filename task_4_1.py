@@ -21,45 +21,42 @@ speed, color, name, is_police (булево).
 Выполните вызов методов и также покажите результат.
 """
 
-
 class Car:
-    # атрибуты
+    # atributes
     def __init__(self, speed, color, name, is_police):
         self.speed = speed
         self.color = color
         self.name = name
         self.is_police = is_police
 
-    # методы
+    # methods
     def go(self):
-        return f'{self.name} - старт, в движении'
+        return f'{self.name} is started'
 
     def stop(self):
-        return f'{self.name} - остановка'
+        return f'{self.name} is stopped'
 
     def turn_right(self):
-        return f'{self.name} - правый поворот'
+        return f'{self.name} is turned right'
 
     def turn_left(self):
-        return f'{self.name} - левый поворот'
+        return f'{self.name} is turned left'
 
     def show_speed(self):
-        return f'Скорость {self.name} - {self.speed} км/ч'
+        return f'Current speed {self.name} is {self.speed}'
 
 
-# дочерние классы
 class TownCar(Car):
     def __init__(self, speed, color, name, is_police):
         super().__init__(speed, color, name, is_police)
 
     def show_speed(self):
-        # print(f'Скорость {self.name} - {self.speed} км/ч')
+        print(f'Current speed of town car {self.name} is {self.speed}')
 
-        if self.speed > 60:
-            return f'Скорость {self.name} больше допустимой'
+        if self.speed > 40:
+            return f'Speed of {self.name} is higher than allow for town car'
         else:
-            return f'Скорость {self.name} допустима для данного типа авто'
-
+            return f'Speed of {self.name} is normal for town car'
 
 class SportCar(Car):
     def __init__(self, speed, color, name, is_police):
@@ -71,12 +68,10 @@ class WorkCar(Car):
         super().__init__(speed, color, name, is_police)
 
     def show_speed(self):
-        # print(f'Скорость {self.name} - {self.speed} км/ч')
+        print(f'Current speed of work car {self.name} is {self.speed}')
 
-        if self.speed > 40:
-            return f'Скорость {self.name} больше допустимой'
-        else:
-            return f'Скорость {self.name} допустима для данного типа авто'
+        if self.speed > 60:
+            return f'Speed of {self.name} is higher than allow for work car'
 
 
 class PoliceCar(Car):
@@ -85,23 +80,23 @@ class PoliceCar(Car):
 
     def police(self):
         if self.is_police:
-            return f'{self.name} - полицицейский атомобиль'
+            return f'{self.name} is from police department'
         else:
-            return f'{self.name} - гражданский атомобиль'
+            return f'{self.name} is not from police department'
 
-# клиентский код
-toyota = TownCar(50, 'Серый', 'Toyota', False)
-bmw = SportCar(300, 'Красный', 'BMW', False)
-uaz = WorkCar(50, 'Зеленый', 'УАЗ', True)
-skoda = PoliceCar(90, 'Белый', 'Skoda', True)
-# вывод на печать
-print(toyota.turn_left())
-print(f'Авто {toyota.turn_right()}, авто {bmw.stop()}')
-print(f'{toyota.go()}  {toyota.show_speed()}')
-print(f'Авто {bmw.name} скорость {bmw.speed}')
-print(f'{uaz.go()}  {uaz.show_speed()}')
-print(f'{uaz.name} полициейский авто? {uaz.is_police}')
-print(f'{bmw.name} полициейский авто? {bmw.is_police}')
-print(uaz.stop())
-print(f'Авто {bmw.turn_left()}')
-print(skoda.police())
+
+audi = SportCar(100, 'Red', 'Audi', False)
+oka = TownCar(30, 'White', 'Oka', False)
+lada = WorkCar(70, 'Rose', 'Lada', True)
+ford = PoliceCar(110, 'Blue',  'Ford', True)
+print(lada.turn_left())
+print(f'When {oka.turn_right()}, then {audi.stop()}')
+print(f'{lada.go()} with speed exactly {lada.show_speed()}')
+print(f'{lada.name} is {lada.color}')
+print(f'Is {audi.name} a police car? {audi.is_police}')
+print(f'Is {lada.name}  a police car? {lada.is_police}')
+print(audi.show_speed())
+print(oka.show_speed())
+print(ford.police())
+print(ford.show_speed())
+

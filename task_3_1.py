@@ -36,8 +36,7 @@ class Position(Worker):
         return self._income.get('wage') + self._income.get('bonus')
 
     def __str__(self):
-        return f'ФИО сотрудника: {self.name} {self.surname}, должность: {self.position}' \
-               f', доход: {str(self._income.get("wage") + self._income.get("bonus"))}'
+        return self.get_full_name() +' '+ str(self.get_total_income())
 
 
 person = Position('Иван', 'Сидоров', 'Рабочий', 30000, 20000)

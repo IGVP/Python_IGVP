@@ -15,3 +15,26 @@
 
 Проверить работу примера, создав экземпляр и вызвав описанный метод.
 """
+
+import time
+
+
+class TrafficLight:
+    color = ['Красный', 'Желтый', 'Зеленый']
+
+    def running(self):
+        i = 0
+        while i < 3:
+            print(f'Сигнал светофора \n'
+                  f'{TrafficLight.color[i]}')
+            if i == 0:
+                time.sleep(7)
+            elif i == 1:
+                time.sleep(2)
+            elif i == 2:
+                time.sleep(7)
+            i += 1
+
+
+t = TrafficLight()
+t.running()
