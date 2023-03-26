@@ -36,7 +36,7 @@ class Road:
 r1 = Road(1, 1)
 w1 = r1.get_weight(1, 0.025)
 
-r2 = Road(10, 1)
+r2 = Road(1, 1)
 w2 = r2.get_weight(5, 0.025)
 
 r3 = Road(1000, 5)

@@ -36,12 +36,19 @@ class Position(Worker):
         return self._income.get('wage') + self._income.get('bonus')
 
     def __str__(self):
-        return f'ФИО сотрудника: {self.name} {self.surname}, должность: {self.position}' \
-               f', доход: {str(self._income.get("wage") + self._income.get("bonus"))}'
+        return f'ФИО сотрудника: {self.name} {self.surname}; должность: {self.position}' \
+               f'; доход: {str(self._income.get("wage") + self._income.get("bonus"))}.'
 
 
-person = Position('Иван', 'Сидоров', 'Рабочий', 30000, 20000)
+# клиентский код
+person = Position('Иван', 'Сидоров', 'рабочий', 30000, 20000)
+person2 = Position('Федор', 'Тихонов', 'строитель', 50000, 30000)
 print(person.get_full_name())
 print(person.position)
 print(person.get_total_income())
 print(f'\n{person.__str__()}')
+
+print(person2.get_full_name())
+print(person2.position)
+print(person2.get_total_income())
+print(f'\n{person2.__str__()}')

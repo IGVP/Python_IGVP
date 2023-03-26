@@ -15,23 +15,24 @@
 """
 
 
-class Stationary:
+class Stationery:
     def __init__(self, title):
         self.title = title
 
     def draw(self):
-        return f'Предмет - {self.title}. Отрисовка.'
+        return f'Предмет {self.title}. Отрисовка.'
 
 
-class Pen(Stationary):
+# дочерние классы
+class Pen(Stationery):
     def __init__(self, title):
         super().__init__(title)
-
+# переопределяем метод draw
     def draw(self):
         return f'Взяли пердмет - "{self.title}". Запуск отрисовки ручкой.'
 
 
-class Pencil(Stationary):
+class Pencil(Stationery):
     def __init__(self, title):
         super().__init__(title)
 
@@ -39,19 +40,19 @@ class Pencil(Stationary):
         return f'Взяли пердмет - "{self.title}". Запуск отрисовки карандашом.'
 
 
-class Handle(Stationary):
+class Handle(Stationery):
     def __init__(self, title):
         super().__init__(title)
 
     def draw(self):
         return f'Взяли предмет -  "{self.title}". Запуск отрисовки маркером.'
 
-
+# клиентский код
 pen = Pen('ручка')
 pencil = Pencil('карандаш')
 handle = Handle('маркер')
 print(pen.draw())
 print(pencil.draw())
 print(handle.draw())
-s = Stationary('чернила')
+s = Stationery('чернила')
 print(s.draw())

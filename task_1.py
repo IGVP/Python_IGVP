@@ -20,13 +20,16 @@ import time
 
 
 class TrafficLight:
-    color = ['Красный', 'Желтый', 'Зеленый']
+    # задаем атрибут
+    __color = ['Красный', 'Желтый', 'Зеленый']
 
-    def running(self):
+    @staticmethod
+    def running():
+
         i = 0
         while i < 3:
             print(f'Сигнал светофора \n'
-                  f'{TrafficLight.color[i]}')
+                  f'{TrafficLight.__color[i]}')
             if i == 0:
                 time.sleep(7)
             elif i == 1:
@@ -36,5 +39,4 @@ class TrafficLight:
             i += 1
 
 
-t = TrafficLight()
-t.running()
+TrafficLight().running()
