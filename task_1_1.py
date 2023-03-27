@@ -30,37 +30,33 @@
 """
 
 
+# интерфейс
 class Matrix:
-    def __init__(self, list_1, list_2):
-        # self.matr = [list_1, list_2]
-        self.list_1 = list_1
-        self.list_2 = list_2
-
-
-    def __add__(self):
-        matr = [[0, 0, 0],
-                [0, 0, 0],
-                [0, 0, 0]]
-
-        for i in range(len(self.list_1)):
-
-            for j in range(len(self.list_2[i])):
-                matr[i][j] = self.list_1[i][j] + self.list_2[i][j]
-                print(matr[i][j])
-
-        return str('\n'.join(['\t'.join([str(j) for j in i]) for i in matr]))
+    def __init__(self, my_list):
+        self.my_list = my_list
 
     def __str__(self):
-        return str('\n'.join(['\t'.join([str(j) for j in i]) for i in matr]))
+        for row in self.my_list:
+            for i in row:
+                print(f"{i:3}", end="")
+            print('')
+        return ''
+
+    def __add__(self, other):
+        for i in range(len(self.my_list)):
+            for j in range(len(other.my_list[i])):
+                self.my_list[i][j] = self.my_list[i][j] + other.my_list[i][j]
+        return Matrix.__str__(self)
 
 
-my_matrix = Matrix([[1, 2, 3],
-                    [4, 5, 6],
-                    [7, 8, 9]],
-                   [[1, 2, 3],
-                    [4, 5, 6],
-                    [7, 8, 9]])
-# result = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+# клиентский код
+m = Matrix([[1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]])
+new_m = Matrix([[1, 2, 3],
+                [4, 5, 6],
+                [7, 8, 9]])
 
-
-print(my_matrix.__add__())
+print(f'матрица 1\n{m}')
+print(f'матрица 2\n{new_m}')
+print(f'Итоговая матрица\n{m.__add__(new_m)}')

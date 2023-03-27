@@ -25,47 +25,41 @@
 
 Два класса: абстрактный и Clothes
 """
-class Textil:
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
+from abc import ABC, abstractmethod
 
-    def get_square_c(self):
-        return self.width / 6.5 + 0.5
 
-    def get_square_j(self):
-        return self.height * 2 + 0.3
+class Clothes(ABC):
+
+    def __init__(self, param):
+        self.param = param
 
     @property
-    def get_sq_full(self):
-        return str(f'Площадь общая ткани \n'
-                   f' {(self.width / 6.5 + 0.5) + (self.height * 2 + 0.3)}')
+    def consumption(self):
+        return f'Сумма затраченной ткани равна: {self.param / 6.5 + 0.5 + 2 * self.param + 0.3 :.2f}'
+
+    @abstractmethod
+    def abstract(self):
+        return 'Smth vary abstract'
 
 
-class Coat(Textil):
-    def __init__(self, width, height):
-        super().__init__(width, height)
-        self.square_c = round(self.width / 6.5 + 0.5)
+class Coat(Clothes):
+    def consumption(self):
+        return f'Для пошива пальто нужно: {self.param / 6.5 + 0.5 :.2f} ткани'
 
-    def __str__(self):
-        return f'Площадь на пальто {self.square_c}'
-
-
-class Jacket(Textil):
-    def __init__(self, width, height):
-        super().__init__(width, height)
-        self.square_j = round(self.height * 2 + 0.3)
-
-    def __str__(self):
-        return f'Площадь на костюм {self.square_j}'
-
-coat = Coat(2, 4)
-jacket = Jacket(1, 2)
-print(coat)
-print(jacket)
-print(coat.get_sq_full)
-print(jacket.get_sq_full)
-print(jacket.get_square_c())
-print(jacket.get_square_j())
+    def abstract(self):
+        return 'Smth vary abstract second'
 
 
+class Costume(Clothes):
+    def consumption(self):
+        return f'Для пошива костюма нужно: {2 * self.param + 0.3 :.2f} ткани'
+
+    def abstract(self):
+        pass
+
+
+coat = Coat(400)
+costume = Costume(55)
+print(coat.consumption())
+print(costume.consumption())
+print(coat.abstract())
