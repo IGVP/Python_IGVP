@@ -25,41 +25,44 @@
 
 Два класса: абстрактный и Clothes
 """
+
 from abc import ABC, abstractmethod
 
 
-class Clothes(ABC):
-
-    def __init__(self, param):
-        self.param = param
-
-    @property
-    def consumption(self):
-        return f'Сумма затраченной ткани равна: {self.param / 6.5 + 0.5 + 2 * self.param + 0.3 :.2f}'
+class AbstractClothes(ABC):
+    @abstractmethod
+    def get_coat_consumption(self):
+        pass
 
     @abstractmethod
-    def abstract(self):
-        return 'Smth vary abstract'
+    def get_suit_consumption(self):
+        pass
 
-
-class Coat(Clothes):
-    def consumption(self):
-        return f'Для пошива пальто нужно: {self.param / 6.5 + 0.5 :.2f} ткани'
-
-    def abstract(self):
-        return 'Smth vary abstract second'
-
-
-class Costume(Clothes):
-    def consumption(self):
-        return f'Для пошива костюма нужно: {2 * self.param + 0.3 :.2f} ткани'
-
-    def abstract(self):
+    @abstractmethod
+    def get_total_consumption(self):
         pass
 
 
-coat = Coat(400)
-costume = Costume(55)
-print(coat.consumption)
-print(costume.consumption)
-print(coat.abstract())
+class Clothes(AbstractClothes):
+    def __init__(self, v, h):
+        self.v = v
+        self.h = h
+
+    @property
+    def get_coat_consumption(self):
+        return self.v / 6.5 + 0.5
+
+    @property
+    def get_suit_consumption(self):
+        return self.h * 2 + 0.3
+
+
+    @property
+    def get_total_consumption(self):
+        return self.get_suit_consumption+self.get_coat_consumption
+
+
+clothes = Clothes(4, 5)
+print(f'Расход ткани на пальто: {clothes.get_coat_consumption:.2f}')
+print(f'Расход ткани на костюм: {clothes.get_suit_consumption:.2f}')
+print(f'Общий расход ткани: {clothes.get_total_consumption:.2f}')
