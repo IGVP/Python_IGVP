@@ -62,7 +62,7 @@ class Clothes(AbstractClothes):
         return self.get_suit_consumption+self.get_coat_consumption
 
 
-clothes = Clothes(4, 5)
+clothes = Clothes(54, 1.9)
 print(f'Расход ткани на пальто: {clothes.get_coat_consumption:.2f}')
 print(f'Расход ткани на костюм: {clothes.get_suit_consumption:.2f}')
 print(f'Общий расход ткани: {clothes.get_total_consumption:.2f}')
