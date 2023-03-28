@@ -9,3 +9,26 @@
 
 Класс-исключение должен контролировать типы данных элементов списка.
 """
+
+
+# формируем класс на определение ошибки
+class MyOwnError(Exception):
+    def __init__(self, txt):
+        self.txt = txt
+
+# запускаем цикл
+my_list = []
+while True:
+    i = input('Введите число, или нажмите пробел для выхода: ')
+    if i != '':
+        try:
+            if not i.isnumeric():
+                raise MyOwnError('Введено не число!')
+        except MyOwnError as err:
+            print(err)
+        else:
+            my_list.append(i)
+    else:
+        print('Остановка программы по требованию пользователя!')
+        break
+print(f'Полученный список: {my_list}')
