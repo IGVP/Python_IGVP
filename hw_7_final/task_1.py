@@ -59,4 +59,4 @@ new_m = Matrix([[1, 2, 3],
 
 print(f'матрица 1\n{m}')
 print(f'матрица 2\n{new_m}')
-print(f'Итоговая матрица\n{m.__add__(new_m)}')
+print(f'Итоговая матрица\n{m + new_m}')
