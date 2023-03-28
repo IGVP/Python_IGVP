@@ -29,6 +29,7 @@
 from abc import ABC, abstractmethod
 
 
+# интерфейс,абстрактный класс
 class AbstractClothes(ABC):
     @abstractmethod
     def get_coat_consumption(self):
@@ -43,11 +44,14 @@ class AbstractClothes(ABC):
         pass
 
 
+# интерфейс, класс Clothes
 class Clothes(AbstractClothes):
+    # атрибуты
     def __init__(self, v, h):
         self.v = v
         self.h = h
 
+    # методы с использвоанием декоратора @property
     @property
     def get_coat_consumption(self):
         return self.v / 6.5 + 0.5
@@ -56,12 +60,12 @@ class Clothes(AbstractClothes):
     def get_suit_consumption(self):
         return self.h * 2 + 0.3
 
-
     @property
     def get_total_consumption(self):
-        return self.get_suit_consumption+self.get_coat_consumption
+        return self.get_suit_consumption + self.get_coat_consumption
 
 
+# клиентский код, создаем объект, вызываем меотоды, выводим на печать
 clothes = Clothes(54, 1.9)
 print(f'Расход ткани на пальто: {clothes.get_coat_consumption:.2f}')
 print(f'Расход ткани на костюм: {clothes.get_suit_consumption:.2f}')

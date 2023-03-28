@@ -104,37 +104,33 @@ print(cell2.make_order(10))
 
 class Cell:
     def __init__(self, quantity):
-        self.quantity = int(quantity)
-
-    def __str__(self):
-        return str(self.quantity)
+        self.quantity = quantity
 
     def __add__(self, other):
-        return Cell(self.quantity + other.quantity)
+        return f'Сумма клеток =({self.quantity + other.quantity})'
 
     def __sub__(self, other):
-        res = self.quantity - other.quantity
-        if res < 0:
-            return f'Разность отрицательна, поэтому операция не выполняется'
+        if self.quantity > other.quantity:
+            return f'Разность клеток = ({self.quantity - other.quantity})'
         else:
-            return res
+            return 'Разность меньше или равна "0", в выполнении операции отказано.'
 
     def __mul__(self, other):
-        return Cell(self.quantity * other.quantity)
+        return f'Умножение клеток = ({self.quantity * other.quantity})'
 
     def __truediv__(self, other):
-        return Cell(round(self.quantity // other.quantity))
+        return f'Деление клеток = ({self.quantity // other.quantity})'
 
     def make_order(self, n):
         result = []
         for i in range(self.quantity):
-            result.append("*")
-            if i != 0 and (i + 1) % n == 0:
-                result.append("\\n")
+            result.append('*')
+            if (i + 1) % n == 0:
+                result.append('\\n')
         return ''.join(result)
 
 
-print("Создаем объекты клеток")
+print("Создаем объекты клеток.")
 cell1 = Cell(30)
 cell2 = Cell(25)
 
@@ -143,27 +139,29 @@ cell4 = Cell(15)
 
 print()
 
-print("Складываем")
+print("Складываем:")
 print(cell1 + cell2)
 
 print()
 
-print("Вычитаем")
+print("Вычитаем:")
 print(cell2 - cell1)
 print(cell4 - cell3)
 
 print()
 
-print("Умножаем")
+print("Умножаем:")
 print(cell2 * cell1)
 
 print()
 
-print("Делим")
+print("Делим:")
 print(cell1 / cell2)
 
 print()
 
-print("Организация ячеек по рядам")
+print("Организация ячеек по рядам:")
 print(cell1.make_order(5))
 print(cell2.make_order(10))
+print(cell3.make_order(6))
+print(cell4.make_order(10))
