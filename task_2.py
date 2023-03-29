@@ -7,7 +7,7 @@
 """
 
 
-# задаем класс на определение деления на ноль
+# задаем класс на определение деления на нуль
 class ZeroDivError(Exception):
     def __init__(self, txt):
         self.txt = txt

@@ -24,11 +24,12 @@ class ComplexNumber:
                              (self.real * other.imaginary + other.real * self.imaginary))
 
     def __str__(self):
-        return f'{self.real}{"+" if self.imaginary > 0 else ""}{self.imaginary}i'
+        return f'{self.real}{"+" if self.imaginary > 0 else " "}{self.imaginary}i'
 
 
-cn_1 = ComplexNumber(1, -1)
-cn_2 = ComplexNumber(3, 5)
-
-print(f'Сумма: {cn_1 + cn_2}')
-print(f'Произведение: {cn_1 * cn_2}')
+cn_1 = ComplexNumber(2, -1)
+cn_2 = ComplexNumber(10, 3)
+cn_3 = cn_1 + cn_2
+cn_4 = cn_1 * cn_2
+print(f'Сумма: {cn_3}')
+print(f'Произведение: {cn_4}')
